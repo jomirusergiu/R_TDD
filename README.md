@@ -21,15 +21,13 @@ ASSERT_* versions generate fatal failures when they fail, and abort the current 
 EXPECT_* versions generate nonfatal failures, which don’t abort the current function.
 Usually, EXPECT_* are preferred, as they allow more than one failures to be reported in a test. However, you should use ASSERT_*  if it doesn’t make sense to continue when the assertion in question fails.
 
-1. Basic Assertions
-
+- Basic Assertions
 These assertions do basic true/false condition testing.
 FATAL ASSERTION	NON-FATAL ASSERTION	VERIFIES
 ASSERT_TRUE(condition);	EXPECT_TRUE(condition);	condition is true
 ASSERT_FALSE(condition);	EXPECT_FALSE(condition);	condition is false
 
-2. Binary Comparison
-
+- Binary Comparison
 These assertions compare two values.
 FATAL ASSERTION	NON-FATAL ASSERTION	VERIFIES
 ASSERT_EQ(expected,actual);	EXPECT_EQ(expected,actual);	expected==actual
@@ -39,8 +37,7 @@ ASSERT_LE(val1,val2);	EXPECT_LE(val1, val2);	val1=<val2
 ASSERT_GT(val1,val2);	EXPECT_GT(val1, val2);	val1>val2
 ASSERT_GE(val1,val2);	EXPECT_GE(val1, val2);	val1>=val2
 
-3. String Comparison
-
+- String Comparison
 These assertions compare two C strings. If you want to compare two string objects, use EXPECT_EQ, EXPECT_NE, and etc instead.
 FATAL ASSERTION	NON-FATAL ASSERTION	VERIFIES
 ASSERT_STREQ(expected_str,actual_str);	EXPECT_STREQ(expected_str,actual_str);	the two C strings havethe same content
@@ -128,7 +125,7 @@ $ ./sample2_unittest
 $ ./sample10_unittest
 ```
 
-Build a simple example
+Build lib
 -------------
 ```BASH
 $ g++ -I. -I./include -c src/gtest-all.cc
