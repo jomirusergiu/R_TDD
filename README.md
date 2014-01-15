@@ -62,28 +62,34 @@ $ sudo apt-get install g++
 ```
 Installation Steps
 -------------
-1. Decompress
+
+Decompress
 ```BASH
 $ unzip gtest-1.6.0.zip
 ```
-2. Go to this directory.
+
+ Go to this directory.
 ```BASH
 $ cd gtest-1.6.0/
 ```
-3. Standard GNU configure script
+
+Standard GNU configure script
 ```BASH
 $ ./configure
 ```
-4. Standard makefile
+
+Standard makefile
 ```BASH
 $ make
 ```
-3. Builds and run all tests
+Builds and run all tests
+
 ```BASH
 $ make check
 ```
 Build Sample Test
 -------------
+
 As an example, the make/ directory contains a Makefile that you can use to build Google Test on systems (e.g. Linux, Mac OS X). It just builds the Google Test library and a sample test.
 ```BASH
 $ cd make
@@ -121,11 +127,11 @@ $ ./sample10_unittest
 
 Build a simple example
 -------------
-1. First, build the GTest Library.
 ```BASH
 $ g++ -I. -I./include -c src/gtest-all.cc
 $ ar -rv libgtest.a gtest-all.o
 ```
+
 It will generates the libgtest.a.
 
 
