@@ -1,6 +1,13 @@
 INTRODUCTION
 -------------
 
+Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards. Kent Beck, who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence.
+Test-driven development is related to the test-first programming concepts of extreme programming, begun in 1999, but more recently has created more general interest in its own right.
+Programmers also apply the concept to improving and debugging legacy code developed with older techniques.
+
+GOOGLE TEST
+-------------
+
 Google’s framework for writing C++ tests on a variety of platforms(Linux Mac OS X, Windows).
 It supports automatic test discovery, a rich set of assertions, user-defined assertions, death tests, fatal test and non-fatal failures, value and type – parameterised tests, various options for running the tests, and XML test report generation.
 Why GTest framework ?
@@ -125,7 +132,7 @@ $ ./sample2_unittest
 $ ./sample10_unittest
 ```
 
-Build lib
+Build libtest
 -------------
 ```BASH
 $ g++ -I. -I./include -c src/gtest-all.cc
