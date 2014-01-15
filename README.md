@@ -132,10 +132,10 @@ $ g++ -I. -I./include -c src/gtest-all.cc
 $ ar -rv libgtest.a gtest-all.o
 ```
 
-It will generates the libgtest.a.
+It will generate the libgtest.a.
 
 
-Projcet Usage and Output
+Project Usage and Output
 -------------
 ```BASH
 RocKKs-iMac:gtest-1.7.0 RocKK$ g++ -I. -I./include main.cpp libgtest.a -lpthread -o main
