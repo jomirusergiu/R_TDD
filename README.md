@@ -15,18 +15,21 @@ When using GTest, you start by writing assertions, which are statements that che
 
 ASSERTIONS
 -------------
+
 GTest assertions are macros that resemble function calls. You test a class or function by making assertions about its behavior. When an assertion fails, GTest prints the assertion’s source file and line number location, along with a failure message.
 ASSERT_* versions generate fatal failures when they fail, and abort the current function.
 EXPECT_* versions generate nonfatal failures, which don’t abort the current function.
 Usually, EXPECT_* are preferred, as they allow more than one failures to be reported in a test. However, you should use ASSERT_*  if it doesn’t make sense to continue when the assertion in question fails.
 
 1. Basic Assertions
+
 These assertions do basic true/false condition testing.
 FATAL ASSERTION	NON-FATAL ASSERTION	VERIFIES
 ASSERT_TRUE(condition);	EXPECT_TRUE(condition);	condition is true
 ASSERT_FALSE(condition);	EXPECT_FALSE(condition);	condition is false
 
 2. Binary Comparison
+
 These assertions compare two values.
 FATAL ASSERTION	NON-FATAL ASSERTION	VERIFIES
 ASSERT_EQ(expected,actual);	EXPECT_EQ(expected,actual);	expected==actual
@@ -37,6 +40,7 @@ ASSERT_GT(val1,val2);	EXPECT_GT(val1, val2);	val1>val2
 ASSERT_GE(val1,val2);	EXPECT_GE(val1, val2);	val1>=val2
 
 3. String Comparison
+
 These assertions compare two C strings. If you want to compare two string objects, use EXPECT_EQ, EXPECT_NE, and etc instead.
 FATAL ASSERTION	NON-FATAL ASSERTION	VERIFIES
 ASSERT_STREQ(expected_str,actual_str);	EXPECT_STREQ(expected_str,actual_str);	the two C strings havethe same content
@@ -48,6 +52,7 @@ Download GTest
 
 Linux Requirements
 -------------
+
 1. GNU  make
 ```BASH
 $ sudo apt-get install make
@@ -60,33 +65,31 @@ $ sudo apt-get install bash
 ```BASH
 $ sudo apt-get install g++
 ```
+
 Installation Steps
 -------------
 
-Decompress
+1.Decompress
 ```BASH
 $ unzip gtest-1.6.0.zip
 ```
-
- Go to this directory.
+2.Go to this directory.
 ```BASH
 $ cd gtest-1.6.0/
 ```
-
-Standard GNU configure script
+3.Standard GNU configure script
 ```BASH
 $ ./configure
 ```
-
-Standard makefile
+4.Standard makefile
 ```BASH
 $ make
 ```
-Builds and run all tests
-
+5.Builds and run all tests
 ```BASH
 $ make check
 ```
+
 Build Sample Test
 -------------
 
