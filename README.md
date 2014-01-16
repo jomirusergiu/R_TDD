@@ -66,15 +66,15 @@ Linux Requirements
 
 1. GNU  make
 ```
-$ sudo apt-get install make
+$ sudo pacman -S make
 ```
 2. POSIX standard shell
 ```
-$ sudo apt-get install bash
+$ sudo pacman -S bash
 ```
 3. C++ compiler
 ```
-$ sudo apt-get install g++
+$ sudo pacman -S g++
 ```
 
 Installation Steps
@@ -112,7 +112,7 @@ $ ./sample1_unittest
 ```
 If you are getting errors while running make, then open Makefile with sudo power
 ```BASH
-$ sudo gedit Makefile
+$ sudo nano Makefile
 ```
 and replace “-lpthread” with “-pthread” at line number 80.
 
@@ -120,7 +120,7 @@ Build GTest samples
 -------------
 Jointly with the GTest, it also comes some C++ unit test examples, found in the samples directory. You can build this examples using CMake. It can be installed :
 ```BASH
-$ sudo apt-get install cmake
+$ sudo pacman -S cmake
 ```
 The CMake uses a configuration file named CMakeLists.txt. To build a project with CMake is create a build directory, generate a Makefile using CMake and build it with make.
 ```BASH
