@@ -1,7 +1,7 @@
 R_TDD
 -------------
 
-Is a small c++ project showing some basic examples on TDD, and how to write Unit Test based on Google Test Framework.
+R_TDD is a small c++ project showing some basic examples on TDD, and how to write Unit Test based on Google Test Framework.
 
 INTRODUCTION
 -------------
