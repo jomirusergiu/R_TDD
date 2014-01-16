@@ -20,6 +20,8 @@ Why GTest framework ?
 How GTest Works ?
 When using GTest, you start by writing assertions, which are statements that check whether a condition is true. Tests use assertions to verify the tested code’s behavior. If a test crashes or has a failed assertion, then it fails; otherwise it succeeds.
 
+You can download GTest Framework from here: https://code.google.com/p/googletest/
+
 ASSERTIONS
 -------------
 
@@ -75,11 +77,11 @@ Installation Steps
 
 1.Decompress
 ```BASH
-$ unzip gtest-1.6.0.zip
+$ unzip gtest-1.7.0.zip
 ```
 2.Go to this directory.
 ```BASH
-$ cd gtest-1.6.0/
+$ cd gtest-1.7.0/
 ```
 3.Standard GNU configure script
 ```BASH
