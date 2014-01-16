@@ -20,7 +20,7 @@ Why GTest framework ?
 1. When GTest fails, GTest allows you to run it in isolation for quick debugging.
 2. GTest groups related tests into test cases that can share data and subroutines.
 3. GTest works on different OSs with different compilers , with or without exceptions.
-( Note: explanation of GTest installation ismostly for Unix-like Mac & Linux.)
+( Note: explanation of GTest installation is mostly for Unix-like Mac & Linux.)
 
 How GTest Works ?
 When using GTest, you start by writing assertions, which are statements that check whether a condition is true. Tests use assertions to verify the tested code’s behavior. If a test crashes or has a failed assertion, then it fails; otherwise it succeeds.
@@ -65,39 +65,39 @@ Linux Requirements
 -------------
 
 1. GNU  make
-```BASH
+```
 $ sudo apt-get install make
 ```
 2. POSIX standard shell
-```BASH
+```
 $ sudo apt-get install bash
 ```
 3. C++ compiler
-```BASH
+```
 $ sudo apt-get install g++
 ```
 
 Installation Steps
 -------------
 
-1.Decompress
-```BASH
+1. Decompress
+```
 $ unzip gtest-1.7.0.zip
 ```
-2.Go to this directory.
-```BASH
+2. Go to this directory.
+```
 $ cd gtest-1.7.0/
 ```
-3.Standard GNU configure script
-```BASH
+3. Standard GNU configure script
+```
 $ ./configure
 ```
-4.Standard makefile
-```BASH
+4. Standard makefile
+```
 $ make
 ```
-5.Builds and run all tests
-```BASH
+5. Builds and run all tests
+```
 $ make check
 ```
 
